@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	{% include 'page.header.html' %}
+	{% if site.title %}<title>{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}{% if not title and site.subtitle %} &ndash; {{ site.subtitle }}{% endif %}</title>{% endif %}
+  </head>
+  <body>
+	  <div  class="container">
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<a href="/" title="Home">
+					<img src="{{ get_asset('images/banner.png') }}" alt="Home"/>
+				</a>
+			</div>
+		</div>     
+        <div class="row">
+			<div class="col-md-8 col-md-offset-2" style="background-color:white;">
+            {% block content %}{% endblock %}
+        </div>
+        </div>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </body>
+</html>
