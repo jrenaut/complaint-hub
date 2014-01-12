@@ -1,16 +1,28 @@
 {% extends 'layout.html' %}
-
+{% set prev = posts[posts.index(post) + 1]|d() %}
+{% set next = posts[:posts.index(post)]|last|d() %}
 
 {% set title = post.title %}
 {% block content %}
     <div class="item">
         <div class="item-header">
             <h1>{{ post.title }}</h1>
-            <h2>{{ post.date }}{% if post.tags %} <span>&raquo;</span> {% for tag in post.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</h2>
+            <div>{{ post.date }}
+				{% if post.tags %} <span>&raquo;</span> 
+					{% for tag in post.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
+						{% if not loop.last %}, {% endif %}
+					{% endfor %}
+				{% endif %}
+			</div>
         </div>
         
         <div class="item-body">
             {{ post.content }}
         </div>
     </div>
+<ul class="pager">
+  <li class="previous"><a href="/{{prev.url}}">&larr; Older</a></li>
+  <li class="next"><a href="/{{next.url}}">Newer &rarr;</a></li>
+</ul>
+
 {% endblock %}
