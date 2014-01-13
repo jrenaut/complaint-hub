@@ -7,19 +7,19 @@
     <div class="item">
         <div class="item-header">
             <h1>{{ post.title }}</h1>
-            <div>{{ post.date }}
-				{% if post.tags %} <span>&raquo;</span> 
-					{% for tag in post.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
-						{% if not loop.last %}, {% endif %}
-					{% endfor %}
-				{% endif %}
-			</div>
+            <div style="padding-bottom:15px">{{ post.date }}</div>
         </div>
         
         <div class="item-body">
             {{ post.content }}
         </div>
     </div>
+    <div>{% if post.tags %} Posted in: 
+					{% for tag in post.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
+						{% if not loop.last %}, {% endif %}
+					{% endfor %}
+				{% endif %}
+	</div>
 <ul class="pager">
   <li class="previous"><a href="/{{prev.url}}">&larr; Older</a></li>
   <li class="next"><a href="/{{next.url}}">Newer &rarr;</a></li>
