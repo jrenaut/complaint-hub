@@ -1,5 +1,18 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<p>Move along, nothing to see here.</p>
+<h1>404!  <small>We couldn't find the page you were looking for.</small></h1>
+<div><script>
+  (function() {
+    var cx = '015378398728724464721:-uq-txbqd5y';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
 {% endblock %}
