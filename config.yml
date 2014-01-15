@@ -31,6 +31,13 @@ subtitle: For all your bitching needs
 # Your site's title. (required to generate a valid feed)
 title: Complaint Hub
 
+#
+# DISPLAY SETTINGS
+#
+
+# The amount of posts that will be displayed on the front page.
+# Leave blank or set to `false` to disable.
+post_limit: 6
 
 #
 # THIRD PARTY SETTINGS
