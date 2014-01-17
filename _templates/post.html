@@ -20,9 +20,13 @@
 					{% endfor %}
 				{% endif %}
 	</div>
+	<ul class="pager">
+  <li class="previous"><a href="/{{prev.url}}">&larr; Older</a></li>
+  <li class="next"><a href="/{{next.url}}">Newer &rarr;</a></li>
+</ul>
 	<div class="row">
 		<!-- START: Livefyre Embed -->
-		<div id="livefyre-comments"></div>
+		<div class="col-md-12" id="livefyre-comments"></div>
 		<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
 		<script type="text/javascript">
 		(function () {
@@ -42,8 +46,5 @@
 		</script>
 		<!-- END: Livefyre Embed -->            
 	</div>
-<ul class="pager">
-  <li class="previous"><a href="/{{prev.url}}">&larr; Older</a></li>
-  <li class="next"><a href="/{{next.url}}">Newer &rarr;</a></li>
-</ul>
+
 {% endblock %}
