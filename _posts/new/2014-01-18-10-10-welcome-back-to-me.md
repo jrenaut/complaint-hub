@@ -1,6 +1,7 @@
 ---
 layout: post.html
 title: Welcome Back to Me
+url: 2014/01/18/welcome-back-to-me/
 tags: [blogging]
 ---
 
