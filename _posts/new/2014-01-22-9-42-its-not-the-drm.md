@@ -5,6 +5,7 @@ tags: [drm, ebooks]
 ---
 
 >There’s not one word about _digital rights management that keeps readers from moving their purchases to another hardware platform._ Why would people forego their main e-book vendor if they lose everything they bought when they switch? What does DBW think those “walls” are built out of, papier-mâché?
+
 -[Teleread: Surprise! Most consumers buy e-books from a single retailer](http://www.teleread.com/drm/surprise-most-consumers-buy-e-books-from-a-single-retailer/)
 
 I don't quite agree with this. It is unsuprising that most people who buy ebooks buy them from one retailer. I buy all my ebooks from Kobo. And while I think DRM is a bad idea for numerous reasons, for both the buyer and the seller, it's not the whole story here.
