@@ -21,8 +21,8 @@
 				{% endif %}
 	</div>
 	<ul class="pager">
-  <li class="previous"><a href="/{{prev.url}}">&larr; Older</a></li>
-  <li class="next"><a href="/{{next.url}}">Newer &rarr;</a></li>
+  <li class="previous{% if not prev %} disabled {% endif %}"><a href="{% if prev.url %}{{ get_url(prev.url) }}{% endif %}">&larr; Older</a></li>
+  <li class="next{% if not next %} disabled {% endif %}"><a href="{% if next.url %}{{ get_url(next.url) }}{% endif %}">Newer &rarr;</a></li>
 </ul>
 	<div class="row">
 		<!-- START: Livefyre Embed -->
