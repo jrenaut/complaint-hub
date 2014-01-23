@@ -2,6 +2,7 @@
 layout: post.html
 title: You suck, Comcast
 tags: [DC, broadband, competition]
+---
 
 >If you are in DC and online, you are likely paying a premium for the privilege.
 
