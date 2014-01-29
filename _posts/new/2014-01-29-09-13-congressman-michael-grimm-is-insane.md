@@ -2,6 +2,7 @@
 layout: post.html
 title: Congressman Michael Grimm is an insane person
 tags: [politics, assault]
+---
 
 >Congressman Michael Grimm (R-NY/Staten Island) felt a little tense after the State of the Union. After giving a terses statement to an NY1 reporter, he was asked about the ongoing issue of his [campaign finance][1]. He declined to discuss the matter and stormed off, then returned a moment later, apparently unaware that the camera was still rolling, and threatened to "throw [the reporter] off this [expletive deleted] balcony." Grimm followed this with "you're not man enough, you're not man enough. I'll break you in half. Like a boy."
 
