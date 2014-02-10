@@ -1,8 +1,9 @@
 ---
-layout:post.html
+layout: post.html
 title: This will end badly
 tags: [wearable, tech, bad idea]
 ---
+
 [Kurzweil AI - Wearable ‘neurocam’ records scenes when it detects user interest](http://www.kurzweilai.net/wearable-neurocam-records-scenes-when-it-detects-user-interest)
 
 I think this is a fascinating step forward in user interface design - the more we can connect thoughts to the external world, the closer we are to doing away with mice and keyboards and whatnot.
