@@ -2,20 +2,20 @@
 {% set prev = None %}
 {% set next = None %}
 
-{% set title = post.title %}
+{% set title = item.title %}
 {% block content %}
     <div class="item">
         <div class="item-header">
-            <h1>{{ post.title }}</h1>
-            <div style="padding-bottom:15px">{{ post.date }}</div>
+            <h1>{{ item.title }}</h1>
+            <div style="padding-bottom:15px">{{ item.date }}</div>
         </div>
         
         <div class="item-body">
-            {{ post.content }}
+            {{ item.content }}
         </div>
     </div>
-    <div>{% if post.tags %} Posted in: 
-					{% for tag in post.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
+    <div>{% if item.tags %} Posted in: 
+					{% for tag in item.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
 						{% if not loop.last %}, {% endif %}
 					{% endfor %}
 				{% endif %}
