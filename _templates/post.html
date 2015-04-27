@@ -15,7 +15,7 @@
         </div>
     </div>
     <div>{% if item.tags %} Posted in: 
-					{% for tag in item.tags %}<a href="{{ get_url(tags[tag].url) }}">{{ tag }}</a>
+					{% for tag in item.tags %}<a href="{{ get_url(item.tags[tag].url) }}">{{ tag }}</a>
 						{% if not loop.last %}, {% endif %}
 					{% endfor %}
 				{% endif %}
