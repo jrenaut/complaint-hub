@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
-{% set prev = posts[posts.index(post) + 1]|d() %}
-{% set next = posts[:posts.index(post)]|last|d() %}
+{% set prev = None %}
+{% set next = None %}
 
 {% set title = post.title %}
 {% block content %}
