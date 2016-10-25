@@ -1,8 +1,16 @@
 {% extends 'layout.html' %}
 
+
+{% block breadcrumbs %}
+    <ul id="breadcrumbs">
+        <li>Blog</li>
+    </ul>
+{% endblock %}
+
 {% block content %}
-    {% for post in posts %}
-        {% if site.post_limit and loop.index <= site.post_limit %}
+    <div class="post-list">
+        {% for post in posts %}
+            {% if site.post_limit and loop.index <= site.post_limit %}
             <div class="item">
         <div class="item-header">
             <h1><a href={{ get_url(post.url) }}>{{ post.title }}</a></h1>
@@ -20,8 +28,10 @@
                                 {% endif %}
         </div>
         {% endif %}
-    {% endfor %}
-     <div class="pagination">
+        {% endfor %}
+    </div>
+    
+<div class="pagination">
 <p><a href="{{ get_url('archives/') }}">Read Older Posts</a></p>
 </div>
 {% endblock %}
