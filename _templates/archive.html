@@ -11,17 +11,20 @@
     </ul>
 {% endblock %}
 
-{% block content %}
-    <dl class="archives">
-        {% for month in archive.months|values %}
-            {% for post in month %}
-                <dt class="archives-post-date">{{ post.timestamp|date('%b %d') }}</dt>
-                <dd class="archives-post-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></dd>
-                
-                {% if post.tags %}
-                    <dd class="archives-post-tags">Tagged <span>»</span> {% for tag in post.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
-                {% endif %}
-            {% endfor %}
+{% block content %} 
+    {% for archive in container.archives|values %}
+    <h1>{{ archive.year }}</h1>
+    <ul>
+        {% for month, items in archive.months|items %}
+            <li>
+                <h1>{{ month }}</h1>
+                <ul>
+                    {% for item in items %}
+                        <li>{{ item.timestamp|date('%d') }} – <a href="{{ get_url(item.url) }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
         {% endfor %}
-    </dl>
+    </ul>
+{% endfor %}
 {% endblock %}
