@@ -5,22 +5,20 @@
 </ul>
 {% endblock %}
 {% block content %}
-<div class="post-list">
+<div class="col-md-12">
    {% for post in posts %}
-   <div class="item">
-      <div class="item-header">
-         <h1><a href={{ get_url(post.url) }}>{{ post.title }}</a></h1>
-         <div style="padding-bottom:15px">{{ post.date }}</div>
-      </div>
+   <div class="row" style="padding: 3px 10px;">
+      <h1><a href={{ get_url(post.url) }}>{{ post.title }}</a></h1>
+      <div>{{ post.date }}</div>
       <div class="body">
          {{ post.content }}
       </div>
-   </div>
-   <div>{% if post.tags %} Posted in:
-      {% for tag in post.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>
-      {% if not loop.last %}, {% endif %}
-      {% endfor %}
-      {% endif %}
+      <div>{% if post.tags %} Posted in:
+         {% for tag in post.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>
+         {% if not loop.last %}, {% endif %}
+         {% endfor %}
+         {% endif %}
+      </div>
    </div>
    {% endfor %}
 </div>
