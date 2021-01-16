@@ -1,6 +1,6 @@
 ---
 layout: post.html
-slug: Did we learn nothing?
+title: Did we learn nothing?
 tags: [technology]
 ---
 

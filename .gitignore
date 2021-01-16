@@ -1,3 +1,5 @@
 *.sh
 config.yml
 .htaccess
+mynt.yml
+public/
