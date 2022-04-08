@@ -1,0 +1,11 @@
+domain: https://www.complainthub.com
+author: Jon Renaut
+description: For all your bitching needs
+email: jon@complainthub.com
+subtitle: For all your bitching needs
+title: Complaint Hub
+analytics: UA-743663-1
+archive_layout: archive.html
+archives_url: /archives/
+tag_layout: tag.html
+tags_url: /tags/
