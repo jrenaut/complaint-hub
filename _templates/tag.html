@@ -12,6 +12,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="col-md-12">   
     {% for archive in tag.archives|values %}
         <dl class="archives">
             <dt class="archives-year"><a href="{{ get_url(archive.url) }}">{{ archive.year }}</a></dt>
@@ -31,4 +32,5 @@
             </dd>
         </dl>
     {% endfor %}
+</div>
 {% endblock %}
