@@ -5,26 +5,26 @@
 {% set title = item.title %}
 {% block content %}
 <div class="col-md-12">
-    <div class="item">
-        <div class="item-header">
-            <h1>{{ item.title }}</h1>
-            <div style="padding-bottom:15px">{{ item.date }}</div>
-        </div>
-        
-        <div class="item-body">
-            {{ item.content }}
-        </div>
+  <div class="item">
+    <div class="item-header">
+      <h1>{{ item.title }}</h1>
+      <div style="padding-bottom:15px">{{ item.date }}</div>
     </div>
-    <div>{% if item.tags %} Posted in: 
-					{% for tag in item.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>
-						{% if not loop.last %}, {% endif %}
-					{% endfor %}
-				{% endif %}
-	</div>
-	<ul class="pager">
-<li class="previous{% if not item.next %} disabled {% endif %}"><a href="{% if item.next.url %}{{ get_url(item.next.url) }}{% endif %}">&larr; Older</a></li>		
-  <li class="next{% if not item.prev %} disabled {% endif %}"><a href="{% if item.prev.url %}{{ get_url(item.prev.url) }}{% endif %}">Newer &rarr;</a></li>
-</ul>
+
+    <div class="item-body">
+      {{ item.content }}
+    </div>
+  </div>
+  <div>{% if item.tags %} Posted in:
+    {% for tag in item.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>
+    {% if not loop.last %}, {% endif %}
+    {% endfor %}
+    {% endif %}
+  </div>
+  <ul class="pager">
+    <li class="previous{% if not item.next %} disabled {% endif %}"><a href="{% if item.next.url %}{{ get_url(item.next.url) }}{% endif %}">&larr; Older</a></li>
+    <li class="next{% if not item.prev %} disabled {% endif %}"><a href="{% if item.prev.url %}{{ get_url(item.prev.url) }}{% endif %}">Newer &rarr;</a></li>
+  </ul>
 </div>
 
 {% endblock %}
