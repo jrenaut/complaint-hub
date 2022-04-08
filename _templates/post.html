@@ -4,6 +4,7 @@
 
 {% set title = item.title %}
 {% block content %}
+<div class="col-md-12">
     <div class="item">
         <div class="item-header">
             <h1>{{ item.title }}</h1>
@@ -24,27 +25,6 @@
 <li class="previous{% if not item.next %} disabled {% endif %}"><a href="{% if item.next.url %}{{ get_url(item.next.url) }}{% endif %}">&larr; Older</a></li>		
   <li class="next{% if not item.prev %} disabled {% endif %}"><a href="{% if item.prev.url %}{{ get_url(item.prev.url) }}{% endif %}">Newer &rarr;</a></li>
 </ul>
-	<div class="row">
-		<!-- START: Livefyre Embed -->
-		<div class="col-md-12" id="livefyre-comments"></div>
-		<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-		<script type="text/javascript">
-		(function () {
-		var articleId = fyre.conv.load.makeArticleId(null);
-		fyre.conv.load({}, [{
-		el: 'livefyre-comments',
-		network: "livefyre.com",
-		siteId: "351607",
-		articleId: articleId,
-		signed: false,
-		collectionMeta: {
-		articleId: articleId,
-		url: fyre.conv.load.makeCollectionUrl(),
-		}
-		}], function() {});
-		}());
-		</script>
-		<!-- END: Livefyre Embed -->            
-	</div>
+</div>
 
 {% endblock %}
