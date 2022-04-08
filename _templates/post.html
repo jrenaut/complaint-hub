@@ -4,11 +4,11 @@
 
 {% set title = item.title %}
 {% block content %}
-<div class="col-md-12">
+<div class="bg-white p-3">
   <div class="item">
     <div class="item-header">
       <h1>{{ item.title }}</h1>
-      <div style="padding-bottom:15px">{{ item.date }}</div>
+      <div class="text-muted pb-1">{{ item.date }}</div>
     </div>
 
     <div class="item-body">
@@ -21,10 +21,16 @@
     {% endfor %}
     {% endif %}
   </div>
-  <ul class="pager">
-    <li class="previous{% if not item.next %} disabled {% endif %}"><a href="{% if item.next.url %}{{ get_url(item.next.url) }}{% endif %}">&larr; Older</a></li>
-    <li class="next{% if not item.prev %} disabled {% endif %}"><a href="{% if item.prev.url %}{{ get_url(item.prev.url) }}{% endif %}">Newer &rarr;</a></li>
-  </ul>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item{% if not item.next %} disabled{% endif %}">
+        <a class="page-link" href="{% if item.next.url %}{{ get_url(item.next.url) }}{% endif %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link{% if not item.prev %} disabled{% endif %}" href="{% if item.prev.url %}{{ get_url(item.prev.url) }}{% endif %}">Next</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 {% endblock %}

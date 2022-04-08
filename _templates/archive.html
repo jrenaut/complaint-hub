@@ -4,7 +4,7 @@
 {% set crumbs = (('News', 'news/'), ('Archives', 'news/archives/'), (archive.year,)) %}
 
 {% block content %}
-<div class="col-md-12">
+<div class="bg-white p-3">
   <dl class="archives">
     {% for month in archive.months|values %}
     {% for post in month %}
