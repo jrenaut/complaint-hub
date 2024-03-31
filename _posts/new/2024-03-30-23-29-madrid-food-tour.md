@@ -6,7 +6,7 @@ tags: [food,travel,Spain]
 
 As I mentioned in the [last post](/2024/03/30/food-in-spain/), food tours are a really cool way to learn about a city and a culture while ALSO eating too much. Most of them are active, though, so you have an excuse.
 
-Our first stop was [El Riojano](https://pasteleriaelriojano.com/) for this little cake and a cup full of chocolate. You are supposed to dip the cake and then drink the rest of the chocolate. I could not bring myself to drink the chocolate as it seemed too early in the morning to be that rude. 
+Our first stop was [El Riojano](https://pasteleriaelriojano.com/) for this little cake and a cup full of chocolate. You are supposed to dip the cake and then drink the rest of the chocolate. I could not bring myself to drink the chocolate as it seemed too early in the morning to be that rude. Technically, it would not have been rude as that, I'm told, is the local habit, but it felt rude. Also you have to pace yourself on a food tour.
 
 [![a little cake and a teacup full of chocolate on a white plate that reads "El Riojano"](https://live.staticflickr.com/65535/53597733597_012554a1b8.jpg)](https://www.flickr.com/gp/thetejon/43dU9s64r4)
 
